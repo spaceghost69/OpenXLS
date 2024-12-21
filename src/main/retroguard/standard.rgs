@@ -1,0 +1,138 @@
+.class java/lang/Object protected
+
+# License Section
+.field io/starter/licensing/License/propname Ljava/lang/String;
+.package_map io/starter/licensing a
+.class_map io/starter/licensing/License a
+.field_map io/starter/licensing/License/nump a
+.field_map io/starter/licensing/License/numcp if
+.field_map io/starter/licensing/License/key do
+.method_map io/starter/licensing/License/getLicenseLevel ()I a
+.method_map io/starter/licensing/License/isLicenseValid (I)Z a
+.method_map io/starter/licensing/License/parseKeyFile (Ljava/io/File;)V a
+.method_map io/starter/licensing/License/isKeyValid (I)Z if
+.method_map io/starter/licensing/License/checkCPUs ()Z if
+.method_map io/starter/licensing/License/isLicenseExpired ()Z do
+.method_map io/starter/licensing/License/setKey (Ljava/lang/String;)V a
+.method_map io/starter/licensing/License/validate (I)V do
+.method_map io/starter/licensing/License/initProps ()V for
+.class_map io/starter/licensing/InvalidLicenseException b
+.field_map io/starter/licensing/InvalidLicenseException/errstr a
+.method_map io/starter/licensing/InvalidLicenseException/getMessage ()Ljava/lang/String; getMessage
+.method_map io/starter/licensing/InvalidLicenseException/toString ()Ljava/lang/String; toString
+
+# InstallAnywhere Custom Eval Key
+.class io/starter/licensing/GetLicenseAction protected
+
+# UI Section
+.class io/starter/OpenXLS/ui/* protected
+.class io/starter/OpenXLS/ui/swing/* protected
+.class io/starter/OpenXLS/eventui/* protected
+.class io/starter/OpenXLS/eventui/event/* protected
+.class io/starter/swingtools/* protected
+
+# ExtenBean API Section
+.class io/starter/ExtenBean/* protected
+.class io/starter/ExtenBean/swing/* protected
+
+# Encryption section
+.class io/starter/crypto/mscrypto/* protected
+.class io/starter/crypto/* protected
+
+# OpenXLS web API Section
+.class io/starter/OpenXLS/web/WebWorkBook protected
+.class io/starter/OpenXLS/web/MemeWorkBook protected
+
+# OpenXLS CellBinder API Section
+.class io/starter/OpenXLS/binder/* protected
+
+# Extentech JNDI Section
+.class io/starter/naming/* protected
+
+# Toolkit Section
+.class io/starter/toolkit/* protected
+
+# security Section
+.class io/starter/security/User protected
+.class io/starter/security/Group protected
+.class io/starter/security/Acl protected
+.class io/starter/security/AclEntry protected
+.class io/starter/security/Permission protected
+.class io/starter/security/UserFactory protected
+
+# API Section
+.class io/starter/OpenXLS/* protected
+.class io/starter/OpenXLS/FormatHandle protected
+.class io/starter/OpenXLS/bean/AXExtenBean protected
+.class io/starter/formats/XLS/Font protected
+.class io/starter/formats/LEO/InvalidFileException protected
+.class io/starter/formats/XLS/Cell protected method 
+.class io/starter/formats/XLS/Dsf
+.class io/starter/formats/XLS/OOXMLAdapter protected	
+.class io/starter/formats/XLS/OOXMLConstants protected	
+.class io/starter/formats/XLS/FormatConstants protected
+.class io/starter/formats/XLS/XLSRecord protected
+.class io/starter/formats/XLS/CellNotFoundException protected
+.class io/starter/formats/XLS/CellRangeConflictException protected
+.class io/starter/formats/XLS/CellPositionConflictException protected
+.class io/starter/formats/XLS/CellTypeMismatchException protected
+.class io/starter/formats/XLS/PivotTableNotFoundException protected
+.class io/starter/formats/XLS/SheetNotFoundException protected
+.class io/starter/formats/XLS/FormulaNotFoundException protected
+.class io/starter/formats/XLS/ChartNotFoundException protected
+.class io/starter/formats/XLS/ImageNotFoundException protected
+.class io/starter/formats/XLS/ValidationException protected
+.class io/starter/formats/XLS/formulas/GenericPtg protected
+.class io/starter/formats/XLS/formulas/PtgErr protected
+.class io/starter/formats/XLS/formulas/PtgMlt protected
+.class io/starter/formats/XLS/formulas/PtgDiv protected
+.class io/starter/formats/XLS/formulas/PtgPower protected
+.class io/starter/formats/XLS/formulas/PtgConcat protected
+.class io/starter/formats/XLS/formulas/PtgNE protected
+.class io/starter/formats/XLS/formulas/PtgLE protected
+.class io/starter/formats/XLS/formulas/PtgLT protected
+.class io/starter/formats/XLS/formulas/PtgGE protected
+.class io/starter/formats/XLS/formulas/PtgGT protected
+.class io/starter/formats/XLS/formulas/PtgEQ protected
+.class io/starter/formats/XLS/formulas/PtgNE protected
+.class io/starter/formats/XLS/formulas/PtgAdd protected
+.class io/starter/formats/XLS/formulas/PtgSub protected
+.class io/starter/formats/XLS/formulas/PtgStr protected
+.class io/starter/formats/XLS/formulas/PtgNumber protected
+.class io/starter/formats/XLS/formulas/PtgInt protected
+.class io/starter/formats/XLS/formulas/PtgRef protected
+.class io/starter/formats/XLS/formulas/PtgArea protected
+.class io/starter/formats/XLS/formulas/PtgBool protected
+.class io/starter/formats/XLS/formulas/PtgArea3d protected
+.class io/starter/formats/XLS/formulas/PtgRef3d protected
+.class io/starter/formats/XLS/formulas/PtgArray protected
+.class io/starter/formats/XLS/formulas/PtgMissArg protected
+.class io/starter/formats/XLS/formulas/PtgMemFunc protected
+.class io/starter/formats/XLS/formulas/PtgFunc protected
+.class io/starter/formats/XLS/formulas/PtgFuncVar protected
+.class io/starter/formats/XLS/formulas/PtgUPlus protected
+.class io/starter/formats/XLS/formulas/PtgUMinus protected
+.class io/starter/formats/XLS/formulas/PtgParen protected
+.class io/starter/formats/XLS/formulas/PtgAtr protected
+
+.class io/starter/formats/XLS/charts/* protected		
+.class io/starter/formats/XLS/FunctionNotSupportedException protected
+.class io/starter/formats/XLS/ColumnNotFoundException protected
+.class io/starter/formats/XLS/RowNotFoundException protected
+.class io/starter/formats/XLS/WorkBookException protected
+.class io/starter/formats/PDF/XLSTFormatting protected 
+.class io/starter/licensing/License/InvalidLicenseException protected
+.field io/starter/licensing/License/propname Ljava/lang/String
+.method io/starter/formats/XLS/XLSRecord/getCellAddress ()Ljava/lang/String
+
+.method io/starter/formats/XLS/XLSRecord/getCol ()I
+.method io/starter/formats/XLS/XLSRecord/getBodyData ()[B
+
+# handle XMLPP etc.
+.class org/xmlpull/mxp1/* protected
+.class org/xmlpull/mxp1_serializer/* protected
+.class org/xmlpull/v1/* protected
+.class org/json/* protected
+
+.class io/starter/comm/* protected
+.class io/starter/OpenXLS/web/* protected
