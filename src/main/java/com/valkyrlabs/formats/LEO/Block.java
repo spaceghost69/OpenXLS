@@ -24,13 +24,14 @@ package com.valkyrlabs.formats.LEO;
 
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
+import java.util.Iterator;
 import java.util.List;
 
 
 /**
  * the basic unit of data in a LEO file.  Can either be BIG or SMALL.
  */
-public interface Block extends java.util.Iterator {
+public interface Block extends Iterator<Block> {
 
     int SMALL = 0;
     int BIG = 1;
@@ -48,7 +49,7 @@ public interface Block extends java.util.Iterator {
     /**
      * link to the vector of blocks for the storage
      */
-    void setBlockVector(List v);
+    void setBlockVector(List<Block> v);
 
     /**
      * get the size of the Block data in bytes

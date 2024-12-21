@@ -22,9 +22,9 @@
  */
 package com.valkyrlabs.formats.escher;
 
-import com.valkyrlabs.toolkit.ByteTools;
-
 import java.io.Serializable;
+
+import com.valkyrlabs.toolkit.ByteTools;
 
 abstract class EscherRecord implements Serializable {
 
@@ -44,12 +44,6 @@ abstract class EscherRecord implements Serializable {
         this.fbt = fbt;
         this.inst = inst;
         this.version = version;
-    }
-
-    /**
-     * no param constructor for Serializable
-     */
-    public void EscherRecord() {
     }
 
     public int getFbt() {
@@ -81,17 +75,13 @@ abstract class EscherRecord implements Serializable {
     protected abstract byte[] getData();
 
     private byte[] getHeaderBytes() {
-        //TODO: Reverse the process of header decoding here
+        // TODO: Reverse the process of header decoding here
         byte[] headerBytes = new byte[4];
 
         headerBytes[0] = (byte) ((0xF & version) | (0xF0 & (inst << 4)));
         headerBytes[1] = (byte) ((0x00000FF0 & inst) >> 4);
-        headerBytes[2] = (byte) ((0x000000FF & fbt));
+        headerBytes[2] = (byte) (0x000000FF & fbt);
         headerBytes[3] = (byte) ((0x0000FF00 & fbt) >> 8);
-
-
-        int version2 = (0x0F & headerBytes[0]);
-        int inst2 = ((0xFF & headerBytes[1]) >> 4) | ((0xF0 & headerBytes[0]) >> 4);
 
         byte[] lenBytes = ByteTools.cLongToLEBytes(length);
 
@@ -103,7 +93,8 @@ abstract class EscherRecord implements Serializable {
     }
 
     public byte[] toByteArray() {
-        byte[] dataBytes = getData();  //Have it in this sequence as some records adjust their header byte length from getData
+        byte[] dataBytes = getData(); // Have it in this sequence as some records adjust their header byte length from
+                                      // getData
         byte[] headerBytes = getHeaderBytes();
 
         byte[] retData = new byte[headerBytes.length + dataBytes.length];

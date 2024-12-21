@@ -115,7 +115,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * - get a handle to any Formula for this Cell<br>
  * <br>
  * 
- * <a href="http://starter.io">Starter Inc.</a>
+ * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
  * 
  * @see WorkBookHandle
  * @see WorkSheetHandle

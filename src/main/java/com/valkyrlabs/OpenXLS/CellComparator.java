@@ -35,7 +35,7 @@ import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
  * that currently this means Dates will always sort above strings due to them
  * storing their value as a long.
  * 
- * <a href="http://starter.io">Starter Inc.</a>
+ * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
  * 
  */
 public class CellComparator implements Comparator<Object> {

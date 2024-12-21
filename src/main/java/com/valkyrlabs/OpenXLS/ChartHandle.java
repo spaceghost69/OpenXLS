@@ -75,7 +75,7 @@ import com.valkyrlabs.toolkit.Logger;
  * WorkBookHandle.getCharts() <br>
  * or WorkBookHandle.getCharts(chart title)
  * 
- * <a href="http://starter.io">Starter Inc.</a>
+ * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
  * 
  * @see WorkBookHandle
  * 

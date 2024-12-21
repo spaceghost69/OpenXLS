@@ -2,7 +2,7 @@ package com.valkyrlabs.OpenXLS;
 
 /*
  * --------- BEGIN COPYRIGHT NOTICE ---------
- * Copyright 2002-2012 Starter Inc.
+ * Copyright 2002-2012 ValkyrLabs Inc.
  * Copyright 2013 Infoteria America Corp.
  * 
  * This file is part of OpenXLS.

@@ -81,7 +81,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * <br>
  * </blockquote>
  * 
- * <a href="http://starter.io">Starter Inc.</a>
+ * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
  * 
  * @see DataBoundCellRange
  * @see XLSRecord

@@ -309,7 +309,7 @@ public class WorkBookHandle extends DocumentHandle implements WorkBook, Handle {
         if (protobook == null)
 
             protobook = ResourceLoader
-                    .getBytesFromJar("/io/starter/OpenXLS/templates/prototysspe.ser");
+                    .getBytesFromJar("/com/valkyrlabs/OpenXLS/templates/prototysspe.ser");
 
         return protobook;
     }
@@ -332,7 +332,7 @@ public class WorkBookHandle extends DocumentHandle implements WorkBook, Handle {
         if (protochart == null) {
             try {
                 byte[] bookbytes = ResourceLoader
-                        .getBytesFromJar("/io/starter/OpenXLS/templates/prototypechart.ser");
+                        .getBytesFromJar("/com/valkyrlabs/OpenXLS/templates/prototypechart.ser");
                 WorkBookHandle chartBook = new WorkBookHandle(bookbytes);
                 ChartHandle ch = chartBook.getCharts()[0];
                 protochart = ch.getSerialBytes();

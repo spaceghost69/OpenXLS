@@ -22,16 +22,24 @@
  */
 package com.valkyrlabs.formats.LEO;
 
-import com.valkyrlabs.OpenXLS.WorkBookException;
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-
 import java.io.ByteArrayOutputStream;
 import java.io.Serializable;
-import java.nio.*;
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.CharBuffer;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
+import java.nio.IntBuffer;
+import java.nio.LongBuffer;
+import java.nio.ShortBuffer;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.valkyrlabs.OpenXLS.WorkBookException;
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 /**
  * Provide a translation layer between the block vector and a byte array.
@@ -57,7 +65,7 @@ public class BlockByteReader implements Serializable {
     private final boolean ro = false;
     transient ByteBuffer backingByteBuffer = ByteBuffer.allocate(0);
     private boolean applyRelativePosition = true;
-    private List blockmap = new ArrayList();
+    private transient List<Block> blockmap = new ArrayList<>();
     private int length = -1;
 
     protected BlockByteReader() {
