@@ -20,26 +20,28 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
+import com.valkyrlabs.formats.XLS.Row;
+import com.valkyrlabs.formats.XLS.WorkBook;
 
-/** <b>thrown when trying to access a col and the col is not Found.</b>
+/** <b>thrown when trying to access a Row and the Row is not Found.</b>
 
- * @see Col
+ * @see Row
  * @see WorkBook
 */
 
-public final class ColumnNotFoundException extends java.lang.Exception{
+public final class RowNotFoundException extends java.lang.Exception{
     
     /** 
 	* serialVersionUID
 	*/
-	private static final long serialVersionUID = 8070857151868706641L;
-	String colname = "";
+	private static final long serialVersionUID = 1754346075847876028L;
+	String rowname = "";
     
-    public ColumnNotFoundException(String n){
+    public RowNotFoundException(String n){
         super();
-        colname = n;
+        rowname = n;
     }
     
     public String getMessage()
@@ -53,7 +55,7 @@ public final class ColumnNotFoundException extends java.lang.Exception{
     {
         // This method is derived from class java.lang.Throwable
         // to do: code goes here
-        return "Col Not Found in Worksheet.  : '" + colname + "'";
+        return "Row Not Found in File. : '" + rowname + "'";
     }
 
 }

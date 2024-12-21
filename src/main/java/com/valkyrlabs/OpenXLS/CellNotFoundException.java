@@ -20,20 +20,19 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
+public final class CellNotFoundException
+extends Exception {
+	private static final long serialVersionUID = 2805244698649022748L;
 
-public class InvalidRecordException extends java.lang.RuntimeException
-{
-    /** 
-	* serialVersionUID
-	*/
-	private static final long serialVersionUID = 8754784258936538994L;
-	String errormsg = "Invalid Record Exception.  ";
-    
-    public InvalidRecordException(String err){
-        errormsg += err;
-    }
-    
-    public String toString(){return errormsg;}
+	public CellNotFoundException (String message) {
+		super( message );
+	}
+	
+	public CellNotFoundException (String sheet, int row, int col) {
+		super( sheet + "!" 
+				+ ExcelTools.formatLocation( new int[]{ row, col } )
+				+ " not found" );
+	}
 }

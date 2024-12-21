@@ -26,14 +26,14 @@ import java.util.Vector;
 
 import com.valkyrlabs.OpenXLS.CellHandle;
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.Array;
 import com.valkyrlabs.formats.XLS.BiffRec;
 import com.valkyrlabs.formats.XLS.Boundsheet;
 import com.valkyrlabs.formats.XLS.Formula;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.Name;
 import com.valkyrlabs.formats.XLS.Row;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.XLSRecord;
 import com.valkyrlabs.toolkit.FastAddVector;
 import com.valkyrlabs.toolkit.Logger;

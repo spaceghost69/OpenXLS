@@ -24,6 +24,7 @@ package com.valkyrlabs.formats.XLS;
 
 import java.io.UnsupportedEncodingException;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.OpenXLS.CellRange;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.OpenXLS.WorkSheetHandle;

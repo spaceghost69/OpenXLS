@@ -34,7 +34,6 @@ import com.valkyrlabs.formats.XLS.PrintGrid;
 import com.valkyrlabs.formats.XLS.PrintRowCol;
 import com.valkyrlabs.formats.XLS.RightMargin;
 import com.valkyrlabs.formats.XLS.Setup;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.TopMargin;
 import com.valkyrlabs.formats.XLS.VCenter;
 import com.valkyrlabs.formats.XLS.WsBool;

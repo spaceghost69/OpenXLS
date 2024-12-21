@@ -42,29 +42,20 @@ import java.util.Map;
 import com.valkyrlabs.formats.XLS.AutoFilter;
 import com.valkyrlabs.formats.XLS.BiffRec;
 import com.valkyrlabs.formats.XLS.Boundsheet;
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
-import com.valkyrlabs.formats.XLS.CellPositionConflictException;
-import com.valkyrlabs.formats.XLS.CellTypeMismatchException;
 import com.valkyrlabs.formats.XLS.Cf;
 import com.valkyrlabs.formats.XLS.Colinfo;
-import com.valkyrlabs.formats.XLS.ColumnNotFoundException;
 import com.valkyrlabs.formats.XLS.Condfmt;
 import com.valkyrlabs.formats.XLS.Dv;
 import com.valkyrlabs.formats.XLS.FeatHeadr;
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
-import com.valkyrlabs.formats.XLS.ImageNotFoundException;
 import com.valkyrlabs.formats.XLS.Mulblank;
 import com.valkyrlabs.formats.XLS.Name;
 import com.valkyrlabs.formats.XLS.Note;
 import com.valkyrlabs.formats.XLS.Password;
 import com.valkyrlabs.formats.XLS.ReferenceTracker;
 import com.valkyrlabs.formats.XLS.Row;
-import com.valkyrlabs.formats.XLS.RowNotFoundException;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.SheetProtectionManager;
 import com.valkyrlabs.formats.XLS.Sxview;
 import com.valkyrlabs.formats.XLS.Unicodestring;
-import com.valkyrlabs.formats.XLS.ValidationException;
 import com.valkyrlabs.formats.XLS.WorkBook;
 import com.valkyrlabs.formats.XLS.XLSConstants;
 import com.valkyrlabs.formats.XLS.XLSRecord;
@@ -984,7 +975,7 @@ public class WorkSheetHandle implements Handle {
 	 *                new Cell double value
 	 * @param address
 	 * @param d
-	 * @exception com.valkyrlabs.formats.XLS.CellNotFoundException
+	 * @exception com.valkyrlabs.OpenXLS.CellNotFoundException
 	 *                                                             is thrown if
 	 *                                                             there is no
 	 *                                                             existing Cell at
@@ -1037,7 +1028,7 @@ public class WorkSheetHandle implements Handle {
 	 *               Cell Address (ie: "D14")
 	 * @param int
 	 *               new Cell int value
-	 * @exception com.valkyrlabs.formats.XLS.CellNotFoundException
+	 * @exception com.valkyrlabs.OpenXLS.CellNotFoundException
 	 *                                                             is thrown if
 	 *                                                             there is no
 	 *                                                             existing Cell at

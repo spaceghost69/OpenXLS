@@ -22,8 +22,8 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.ExpressionParser;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
 

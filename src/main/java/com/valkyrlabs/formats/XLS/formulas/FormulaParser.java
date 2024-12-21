@@ -27,11 +27,11 @@ import java.util.Locale;
 import java.util.Stack;
 
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.InvalidRecordException;
 import com.valkyrlabs.formats.XLS.Array;
 import com.valkyrlabs.formats.XLS.Boundsheet;
 import com.valkyrlabs.formats.XLS.Formula;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
-import com.valkyrlabs.formats.XLS.InvalidRecordException;
 import com.valkyrlabs.formats.XLS.WorkBook;
 import com.valkyrlabs.formats.XLS.XLSConstants;
 import com.valkyrlabs.formats.XLS.XLSRecord;

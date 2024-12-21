@@ -30,6 +30,7 @@ import org.xmlpull.v1.XmlPullParser;
 
 import com.valkyrlabs.OpenXLS.CellRange;
 import com.valkyrlabs.OpenXLS.FormatHandle;
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.formats.OOXML.Dxf;
 import com.valkyrlabs.formats.OOXML.Fill;

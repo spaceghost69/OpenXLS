@@ -22,6 +22,8 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.*;
 
 import java.io.Serializable;

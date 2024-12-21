@@ -22,6 +22,9 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.*;
 import com.valkyrlabs.toolkit.Logger;
 

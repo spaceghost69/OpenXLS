@@ -22,6 +22,8 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;
 
 /**

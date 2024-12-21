@@ -25,6 +25,7 @@ package com.valkyrlabs.formats.XLS;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.IxtiListener;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;
 import com.valkyrlabs.toolkit.ByteTools;

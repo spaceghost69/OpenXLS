@@ -24,13 +24,7 @@ package com.valkyrlabs.OpenXLS;
 
 import java.util.List;
 
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
-import com.valkyrlabs.formats.XLS.CellPositionConflictException;
-import com.valkyrlabs.formats.XLS.CellTypeMismatchException;
-import com.valkyrlabs.formats.XLS.ColumnNotFoundException;
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
 import com.valkyrlabs.formats.XLS.Mergedcells;
-import com.valkyrlabs.formats.XLS.RowNotFoundException;
 import com.valkyrlabs.formats.XLS.Sheet;
 
 /** An interface representing an OpenXLS WorkSheet
@@ -255,7 +249,7 @@ public interface WorkSheet extends Handle{
 	   @param double new Cell double value
 	   @param address
 	   @param d
-	   @exception com.valkyrlabs.formats.XLS.CellNotFoundException is
+	   @exception com.valkyrlabs.OpenXLS.CellNotFoundException is
 	   thrown if there is no existing Cell at the specified address.
 	 */
 	public abstract void setVal(String address, double d)
@@ -285,7 +279,7 @@ public interface WorkSheet extends Handle{
 	
 	   @param String Cell Address (ie: "D14")
 	   @param int new Cell int value
-	   @exception com.valkyrlabs.formats.XLS.CellNotFoundException
+	   @exception com.valkyrlabs.OpenXLS.CellNotFoundException
 	   is thrown if there is no existing Cell at the specified address.
 	 */
 	public abstract void setVal(String address, int i)

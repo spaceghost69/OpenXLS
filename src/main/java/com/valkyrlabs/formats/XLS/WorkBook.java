@@ -52,9 +52,13 @@ import java.util.TreeMap;
 import java.util.Vector;
 
 import com.valkyrlabs.OpenXLS.Cell;
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
+import com.valkyrlabs.OpenXLS.ChartNotFoundException;
 import com.valkyrlabs.OpenXLS.DateConverter;
 import com.valkyrlabs.OpenXLS.FormatHandle;
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
 import com.valkyrlabs.OpenXLS.ImageHandle;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.OpenXLS.WorkBookException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.formats.OOXML.Theme;

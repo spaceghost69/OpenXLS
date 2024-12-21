@@ -43,9 +43,12 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import com.valkyrlabs.OpenXLS.CellHandle;
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.OpenXLS.DateConverter;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.OpenXLS.FormatHandle;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.OpenXLS.WorkSheetHandle;
 import com.valkyrlabs.formats.OOXML.Border;

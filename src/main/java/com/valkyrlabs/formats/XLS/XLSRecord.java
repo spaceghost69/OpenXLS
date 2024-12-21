@@ -33,6 +33,7 @@ import java.util.List;
 import com.valkyrlabs.OpenXLS.CellRange;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.OpenXLS.FormatHandle;
+import com.valkyrlabs.OpenXLS.InvalidRecordException;
 import com.valkyrlabs.formats.LEO.BlockByteConsumer;
 import com.valkyrlabs.formats.LEO.BlockByteReader;
 import com.valkyrlabs.toolkit.ByteTools;

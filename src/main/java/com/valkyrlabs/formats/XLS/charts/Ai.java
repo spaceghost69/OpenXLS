@@ -33,11 +33,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.ExpressionParser;
 import com.valkyrlabs.formats.XLS.Externsheet;
 import com.valkyrlabs.formats.XLS.Formula;
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.GenericPtg;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;
 import com.valkyrlabs.formats.XLS.formulas.PtgArea3d;

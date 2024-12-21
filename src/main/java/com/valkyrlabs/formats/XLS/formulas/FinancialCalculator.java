@@ -23,7 +23,7 @@
 package com.valkyrlabs.formats.XLS.formulas;
 
 import com.valkyrlabs.OpenXLS.DateConverter;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.toolkit.Logger;
 
 import java.util.Calendar;

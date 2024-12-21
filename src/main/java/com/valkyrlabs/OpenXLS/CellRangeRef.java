@@ -22,7 +22,6 @@
  */
 package com.valkyrlabs.OpenXLS;
 
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.XLSRecord;
 
 /**

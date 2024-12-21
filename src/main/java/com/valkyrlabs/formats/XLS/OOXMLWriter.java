@@ -47,6 +47,7 @@ import com.valkyrlabs.OpenXLS.CommentHandle;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.OpenXLS.FormatHandle;
 import com.valkyrlabs.OpenXLS.FormulaHandle;
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
 import com.valkyrlabs.OpenXLS.ImageHandle;
 import com.valkyrlabs.OpenXLS.RowHandle;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;

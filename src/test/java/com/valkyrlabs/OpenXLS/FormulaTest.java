@@ -36,10 +36,6 @@ import java.io.FileOutputStream;
 
 import org.junit.Test;
 
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.toolkit.Logger;
 
 /**

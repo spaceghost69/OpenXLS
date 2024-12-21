@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.valkyrlabs.OpenXLS.ExcelTools;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.toolkit.Logger;
  
  /**

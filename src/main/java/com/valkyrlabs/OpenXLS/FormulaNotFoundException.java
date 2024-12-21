@@ -20,37 +20,23 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-
-/** thrown when trying to add a BiffRec to the position of an
-    existing Cell.
-*/
-public class CellPositionConflictException  extends java.lang.Exception{
-    
+/** No Formula Found. 
+ */
+public final class FormulaNotFoundException
+extends java.lang.Exception {
     /** 
 	* serialVersionUID
 	*/
-	private static final long serialVersionUID = -923697641625221233L;
-	String cellname = "";
-    
-    public CellPositionConflictException(String n){
-        super();
-        cellname = n;
-    }
-    
-    public String getMessage()
-    {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
-        return this.toString();
-    }
+	private static final long serialVersionUID = 8810290427677467459L;
 
-    public String toString()
-    {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
-        return "BiffRec position conflicts with another Cell.  : '" + cellname + "'";
+	public FormulaNotFoundException (String message){
+        super( message );
     }
+    
+    public FormulaNotFoundException() {
+		super();
+	}
 
 }

@@ -174,7 +174,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- Maven Javadoc Plugin -->
+			<!-- Maven Javadoc Plugin 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -191,6 +191,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			-->
 			<!-- Maven Surefire Plugin for Running Tests -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -203,7 +204,7 @@
 					<runOrder>alphabetical</runOrder>
 				</configuration>
 			</plugin>
-			<!-- Maven GPG Plugin for Signing Artifacts -->
+			<!-- Maven GPG Plugin for Signing Artifacts 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
@@ -218,6 +219,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			-->
 			<!-- Maven Deploy Plugin for Deployment -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -292,7 +294,7 @@
 			<activation>
 				<property>
 					<name>performRelease</name>
-					<value>true</value>
+					<value>false</value>
 				</property>
 			</activation>
 			<build>

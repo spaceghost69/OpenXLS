@@ -40,7 +40,6 @@ import org.json.JSONObject;
 
 import com.valkyrlabs.formats.XLS.BiffRec;
 import com.valkyrlabs.formats.XLS.Boundsheet;
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
 import com.valkyrlabs.formats.XLS.Font;
 import com.valkyrlabs.formats.XLS.Mulblank;
 import com.valkyrlabs.formats.XLS.Row;

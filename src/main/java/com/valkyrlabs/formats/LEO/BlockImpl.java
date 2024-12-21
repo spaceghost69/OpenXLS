@@ -220,7 +220,7 @@ public abstract class BlockImpl
         return nextblock != null;
     }
 
-    public Object next() {
+    public Block next() {
         return nextblock;
     }
 

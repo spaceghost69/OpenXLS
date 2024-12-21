@@ -31,11 +31,6 @@ package com.valkyrlabs.OpenXLS;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
-import com.valkyrlabs.formats.XLS.ChartNotFoundException;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
-import com.valkyrlabs.formats.XLS.PivotTableNotFoundException;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.XLSConstants;
 
 /**

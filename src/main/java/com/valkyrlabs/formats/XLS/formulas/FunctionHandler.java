@@ -22,7 +22,7 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.XLSRecord;
 
 import java.util.Locale;

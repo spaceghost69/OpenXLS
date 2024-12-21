@@ -23,7 +23,6 @@
 package com.valkyrlabs.OpenXLS;
 
 import com.valkyrlabs.formats.XLS.Dv;
-import com.valkyrlabs.formats.XLS.ValidationException;
 import com.valkyrlabs.toolkit.Logger;
 import com.valkyrlabs.toolkit.StringTool;
 

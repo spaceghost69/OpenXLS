@@ -20,41 +20,39 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
 
-/** <b>thrown when trying to access a NamedRange and the NamedRange is not Found.</b>
 
- * @see Name
- * @see WorkBook
+/** <b>No PivotTable Found.</b>
+
+    Thrown when a PivotTableHandle is requested for a non-existent Pivot Table.
+    
+ * @see PivotTableHandle
+ * 
 */
 
-public final class NameNotFoundException extends java.lang.Exception{
+public final class PivotTableNotFoundException extends Exception{
     
     /** 
-	 * 
-	 * 
-	 */
-	private static final long serialVersionUID = 8534816146224053726L;
-	String RangeName = "";
+	* serialVersionUID
+	*/
+	private static final long serialVersionUID = 4600384378296560405L;
+	String pivotTableName = "";
     
-    public NameNotFoundException(String n){
+    public PivotTableNotFoundException(String n){
         super();
-        RangeName = n;
+        pivotTableName = n;
     }
     
     public String getMessage()
     {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
         return this.toString();
     }
 
     public String toString()
     {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
-        return RangeName + " not found.";
+        return "PivotTable Not Found in File. : '" + pivotTableName + "'";
     }
 
 }

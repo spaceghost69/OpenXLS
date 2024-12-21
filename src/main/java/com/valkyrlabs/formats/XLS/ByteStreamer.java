@@ -35,6 +35,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
+import com.valkyrlabs.OpenXLS.InvalidRecordException;
 import com.valkyrlabs.OpenXLS.WorkBookException;
 import com.valkyrlabs.formats.LEO.BIGBLOCK;
 import com.valkyrlabs.formats.LEO.Block;

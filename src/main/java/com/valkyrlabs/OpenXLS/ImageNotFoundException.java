@@ -20,22 +20,39 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.formats.XLS.WorkBook;
 
+/** <b>thrown when trying to access an Image and it is not found.</b>
 
-public final class CellNotFoundException
-extends Exception {
-	private static final long serialVersionUID = 2805244698649022748L;
+ * @see ImageHandle
+ * @see WorkBook
+*/
 
-	public CellNotFoundException (String message) {
-		super( message );
-	}
-	
-	public CellNotFoundException (String sheet, int row, int col) {
-		super( sheet + "!" 
-				+ ExcelTools.formatLocation( new int[]{ row, col } )
-				+ " not found" );
-	}
+public final class ImageNotFoundException extends java.lang.Exception{
+    
+
+	/** 
+	 * 
+	 * 
+	 */
+	private static final long serialVersionUID = -5031711537364049574L;
+	String description = "";
+    
+    public ImageNotFoundException(String n){
+        super();
+        description = n;
+    }
+    
+    public String getMessage()
+    {
+        return this.toString();
+    }
+
+    public String toString()
+    {
+        return description;
+    }
+
 }

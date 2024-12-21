@@ -20,23 +20,41 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-/** No Formula Found. 
- */
-public final class FormulaNotFoundException
-extends java.lang.Exception {
-    /** 
+
+
+/** <b>No Chart Found.</b>
+
+ * @see Chart
+ * 
+*/
+
+public final class ChartNotFoundException extends java.lang.Exception{
+    
+	/** 
 	* serialVersionUID
 	*/
-	private static final long serialVersionUID = 8810290427677467459L;
-
-	public FormulaNotFoundException (String message){
-        super( message );
-    }
+	private static final long serialVersionUID = -6189760703370814620L;
+	String name = "";
     
-    public FormulaNotFoundException() {
+	public ChartNotFoundException(String n){
 		super();
+		name = n;
+	}
+    
+	public String getMessage()
+	{
+		// This method is derived from class java.lang.Throwable
+		// to do: code goes here
+		return this.toString();
+	}
+
+	public String toString()
+	{
+		// This method is derived from class java.lang.Throwable
+		// to do: code goes here
+		return "Chart Not Found in File. : '" + name + "'";
 	}
 
 }

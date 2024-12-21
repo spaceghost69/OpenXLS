@@ -22,6 +22,7 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.OpenXLS.FormatHandle;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;

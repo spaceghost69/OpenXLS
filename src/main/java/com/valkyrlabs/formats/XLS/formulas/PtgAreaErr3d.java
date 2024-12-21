@@ -22,9 +22,9 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.Boundsheet;
 import com.valkyrlabs.formats.XLS.Externsheet;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
 

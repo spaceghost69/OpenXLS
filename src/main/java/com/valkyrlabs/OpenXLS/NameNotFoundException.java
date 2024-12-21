@@ -20,41 +20,43 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
+import com.valkyrlabs.formats.XLS.Name;
+import com.valkyrlabs.formats.XLS.WorkBook;
 
+/** <b>thrown when trying to access a NamedRange and the NamedRange is not Found.</b>
 
-/** <b>No Chart Found.</b>
-
- * @see Chart
- * 
+ * @see Name
+ * @see WorkBook
 */
 
-public final class ChartNotFoundException extends java.lang.Exception{
+public final class NameNotFoundException extends java.lang.Exception{
     
-	/** 
-	* serialVersionUID
-	*/
-	private static final long serialVersionUID = -6189760703370814620L;
-	String name = "";
+    /** 
+	 * 
+	 * 
+	 */
+	private static final long serialVersionUID = 8534816146224053726L;
+	String RangeName = "";
     
-	public ChartNotFoundException(String n){
-		super();
-		name = n;
-	}
+    public NameNotFoundException(String n){
+        super();
+        RangeName = n;
+    }
     
-	public String getMessage()
-	{
-		// This method is derived from class java.lang.Throwable
-		// to do: code goes here
-		return this.toString();
-	}
+    public String getMessage()
+    {
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
+        return this.toString();
+    }
 
-	public String toString()
-	{
-		// This method is derived from class java.lang.Throwable
-		// to do: code goes here
-		return "Chart Not Found in File. : '" + name + "'";
-	}
+    public String toString()
+    {
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
+        return RangeName + " not found.";
+    }
 
 }

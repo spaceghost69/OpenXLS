@@ -23,6 +23,7 @@
 package com.valkyrlabs.formats.XLS.formulas;
 
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.*;
 import com.valkyrlabs.toolkit.Logger;
 

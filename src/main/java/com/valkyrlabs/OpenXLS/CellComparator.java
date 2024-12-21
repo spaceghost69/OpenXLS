@@ -24,8 +24,6 @@ package com.valkyrlabs.OpenXLS;
 
 import java.util.Comparator;
 
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
-
 /**
  * CellComparitor is a implementation of a comparitor for sorting cell values.
  * In this instance numeric values (whether from a cell or a formula result) are

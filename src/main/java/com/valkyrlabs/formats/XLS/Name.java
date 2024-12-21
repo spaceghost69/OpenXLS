@@ -28,6 +28,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.FormulaCalculator;
 import com.valkyrlabs.formats.XLS.formulas.FormulaParser;
 import com.valkyrlabs.formats.XLS.formulas.GenericPtg;
@@ -454,7 +457,7 @@ public final class Name extends XLSRecord {
         if (ptga == null)
             return null; // it's a NameX or some other non-Cell Name
         if (ptga instanceof PtgRefErr3d) // 20080228 KSC: return Exception rather than null upon Deleted Named Range
-            throw new com.valkyrlabs.formats.XLS.CellNotFoundException(
+            throw new com.valkyrlabs.OpenXLS.CellNotFoundException(
                     "Named Range " + this.getName() + " has been deleted or it's referenced cell is invalid"); // JM -
                                                                                                                // why
                                                                                                                // not

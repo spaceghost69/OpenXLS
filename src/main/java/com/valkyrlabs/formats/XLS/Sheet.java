@@ -31,6 +31,8 @@ package com.valkyrlabs.formats.XLS;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
+
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.formats.XLS.charts.Chart;
 
 /**

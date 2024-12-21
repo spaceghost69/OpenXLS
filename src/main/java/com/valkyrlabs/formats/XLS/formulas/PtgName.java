@@ -22,8 +22,8 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
 import com.valkyrlabs.formats.XLS.Formula;
-import com.valkyrlabs.formats.XLS.FormulaNotFoundException;
 import com.valkyrlabs.formats.XLS.Name;
 import com.valkyrlabs.formats.XLS.WorkBook;
 import com.valkyrlabs.toolkit.ByteTools;

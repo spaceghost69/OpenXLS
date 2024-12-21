@@ -20,38 +20,20 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
 
-/** <b>thrown when trying to access an Image and it is not found.</b>
-
- * @see ImageHandle
- * @see WorkBook
-*/
-
-public final class ImageNotFoundException extends java.lang.Exception{
+public class InvalidRecordException extends java.lang.RuntimeException
+{
+    /** 
+	* serialVersionUID
+	*/
+	private static final long serialVersionUID = 8754784258936538994L;
+	String errormsg = "Invalid Record Exception.  ";
     
-
-	/** 
-	 * 
-	 * 
-	 */
-	private static final long serialVersionUID = -5031711537364049574L;
-	String description = "";
-    
-    public ImageNotFoundException(String n){
-        super();
-        description = n;
+    public InvalidRecordException(String err){
+        errormsg += err;
     }
     
-    public String getMessage()
-    {
-        return this.toString();
-    }
-
-    public String toString()
-    {
-        return description;
-    }
-
+    public String toString(){return errormsg;}
 }

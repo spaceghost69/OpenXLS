@@ -31,10 +31,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.valkyrlabs.formats.XLS.Boundsheet;
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
-import com.valkyrlabs.formats.XLS.FunctionNotSupportedException;
 import com.valkyrlabs.formats.XLS.Name;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;
 import com.valkyrlabs.toolkit.Logger;
 import com.valkyrlabs.toolkit.StringTool;

@@ -23,6 +23,7 @@
 package com.valkyrlabs.formats.XLS;
 
 import com.valkyrlabs.formats.XLS.formulas.*;
+import com.valkyrlabs.OpenXLS.InvalidRecordException;
 import com.valkyrlabs.formats.XLS.charts.*;
 
 import java.util.*;

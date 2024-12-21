@@ -20,9 +20,9 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-import com.valkyrlabs.OpenXLS.Cell;
+import com.valkyrlabs.formats.XLS.WorkBook;
 
 /**
  * <b>No WorkSheet Found.</b>

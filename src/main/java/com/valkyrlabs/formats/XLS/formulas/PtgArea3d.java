@@ -26,11 +26,11 @@ import java.util.ArrayList;
 
 import com.valkyrlabs.OpenXLS.CellHandle;
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.Boundsheet;
 import com.valkyrlabs.formats.XLS.Externsheet;
 import com.valkyrlabs.formats.XLS.Formula;
 import com.valkyrlabs.formats.XLS.Name;
-import com.valkyrlabs.formats.XLS.SheetNotFoundException;
 import com.valkyrlabs.formats.XLS.Shrfmla;
 import com.valkyrlabs.formats.XLS.WorkBook;
 import com.valkyrlabs.formats.XLS.XLSRecord;

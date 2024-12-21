@@ -31,6 +31,7 @@ import org.xmlpull.v1.XmlPullParser;
 
 import com.valkyrlabs.OpenXLS.DateConverter;
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.ValidationException;
 import com.valkyrlabs.OpenXLS.ValidationHandle;
 import com.valkyrlabs.formats.XLS.formulas.FormulaParser;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;

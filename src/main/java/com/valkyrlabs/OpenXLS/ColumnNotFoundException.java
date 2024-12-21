@@ -20,47 +20,41 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-/**
- * Validation Exceptions are thrown when a cell value is set to a value that does not pass
- * validity  of an Excel validation record affecting said cell
- * 
- * 
- *
- */
-public class ValidationException
-extends Exception {
-    private static final long serialVersionUID = -6448974788123912538L;
+import com.valkyrlabs.formats.XLS.WorkBook;
+
+/** <b>thrown when trying to access a col and the col is not Found.</b>
+
+ * @see Col
+ * @see WorkBook
+*/
+
+public final class ColumnNotFoundException extends java.lang.Exception{
     
-    private String errorTitle = "";
-    private String errorText = "";
+    /** 
+	* serialVersionUID
+	*/
+	private static final long serialVersionUID = 8070857151868706641L;
+	String colname = "";
     
-    
-    public ValidationException(String eTitle, String eText){
+    public ColumnNotFoundException(String n){
         super();
-        errorTitle = eTitle;
-        errorText = eText;
-    }
-    
-    /** Returns the title of the validation error dialog. */
-    public String getTitle() {
-    	return errorTitle;
-    }
-    
-    /** Returns the body of the validation error dialog. */
-    public String getText() {
-    	return errorText;
+        colname = n;
     }
     
     public String getMessage()
     {
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
         return this.toString();
     }
-    
+
     public String toString()
     {
-        return errorTitle + ": " + errorText;
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
+        return "Col Not Found in Worksheet.  : '" + colname + "'";
     }
 
 }

@@ -20,39 +20,47 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
-
-
-/** <b>No PivotTable Found.</b>
-
-    Thrown when a PivotTableHandle is requested for a non-existent Pivot Table.
-    
- * @see PivotTableHandle
+/**
+ * Validation Exceptions are thrown when a cell value is set to a value that does not pass
+ * validity  of an Excel validation record affecting said cell
  * 
-*/
-
-public final class PivotTableNotFoundException extends Exception{
+ * 
+ *
+ */
+public class ValidationException
+extends Exception {
+    private static final long serialVersionUID = -6448974788123912538L;
     
-    /** 
-	* serialVersionUID
-	*/
-	private static final long serialVersionUID = 4600384378296560405L;
-	String pivotTableName = "";
+    private String errorTitle = "";
+    private String errorText = "";
     
-    public PivotTableNotFoundException(String n){
+    
+    public ValidationException(String eTitle, String eText){
         super();
-        pivotTableName = n;
+        errorTitle = eTitle;
+        errorText = eText;
+    }
+    
+    /** Returns the title of the validation error dialog. */
+    public String getTitle() {
+    	return errorTitle;
+    }
+    
+    /** Returns the body of the validation error dialog. */
+    public String getText() {
+    	return errorText;
     }
     
     public String getMessage()
     {
         return this.toString();
     }
-
+    
     public String toString()
     {
-        return "PivotTable Not Found in File. : '" + pivotTableName + "'";
+        return errorTitle + ": " + errorText;
     }
 
 }

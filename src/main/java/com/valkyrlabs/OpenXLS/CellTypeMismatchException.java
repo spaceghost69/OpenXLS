@@ -20,40 +20,33 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
 
-/** <b>thrown when trying to access a Row and the Row is not Found.</b>
+/** Thrown when trying to change the value of a BiffRec to an incompatible
+    data type.
 
- * @see Row
- * @see WorkBook
+    For example: changing a float BiffRec value to a String containing non-numeric
+    characters would throw one of these.
 */
-
-public final class RowNotFoundException extends java.lang.Exception{
+public class CellTypeMismatchException extends java.lang.NumberFormatException{
     
     /** 
 	* serialVersionUID
 	*/
-	private static final long serialVersionUID = 1754346075847876028L;
-	String rowname = "";
+	private static final long serialVersionUID = 8664358251873265167L;
+	String cellname = "";
     
-    public RowNotFoundException(String n){
+    public CellTypeMismatchException(String n){
         super();
-        rowname = n;
+        this.cellname = n;
     }
     
-    public String getMessage()
-    {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
-        return this.toString();
+    public String toString(){
+        return "Cell Type Mismatch Exception trying to set value of Cell: " + cellname;
     }
-
-    public String toString()
-    {
-        // This method is derived from class java.lang.Throwable
-        // to do: code goes here
-        return "Row Not Found in File. : '" + rowname + "'";
+    
+    public String getMessage() {
+    	return toString();
     }
-
 }

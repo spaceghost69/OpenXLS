@@ -25,6 +25,7 @@ package com.valkyrlabs.formats.XLS;
 
 import java.util.ArrayList;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;

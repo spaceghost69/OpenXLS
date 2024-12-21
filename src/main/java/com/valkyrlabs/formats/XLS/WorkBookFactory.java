@@ -27,6 +27,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 
 import com.valkyrlabs.OpenXLS.CellHandle;
+import com.valkyrlabs.OpenXLS.InvalidRecordException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.formats.LEO.*;
 import com.valkyrlabs.toolkit.*;

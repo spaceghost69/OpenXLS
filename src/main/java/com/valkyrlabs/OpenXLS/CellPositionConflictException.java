@@ -20,33 +20,37 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
 
-/** Thrown when trying to change the value of a BiffRec to an incompatible
-    data type.
-
-    For example: changing a float BiffRec value to a String containing non-numeric
-    characters would throw one of these.
+/** thrown when trying to add a BiffRec to the position of an
+    existing Cell.
 */
-public class CellTypeMismatchException extends java.lang.NumberFormatException{
+public class CellPositionConflictException  extends java.lang.Exception{
     
     /** 
 	* serialVersionUID
 	*/
-	private static final long serialVersionUID = 8664358251873265167L;
+	private static final long serialVersionUID = -923697641625221233L;
 	String cellname = "";
     
-    public CellTypeMismatchException(String n){
+    public CellPositionConflictException(String n){
         super();
-        this.cellname = n;
+        cellname = n;
     }
     
-    public String toString(){
-        return "Cell Type Mismatch Exception trying to set value of Cell: " + cellname;
+    public String getMessage()
+    {
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
+        return this.toString();
     }
-    
-    public String getMessage() {
-    	return toString();
+
+    public String toString()
+    {
+        // This method is derived from class java.lang.Throwable
+        // to do: code goes here
+        return "BiffRec position conflicts with another Cell.  : '" + cellname + "'";
     }
+
 }

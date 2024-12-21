@@ -20,10 +20,11 @@
  * <http://www.gnu.org/licenses/>.
  * ---------- END COPYRIGHT NOTICE ----------
  */
-package com.valkyrlabs.formats.XLS;
+package com.valkyrlabs.OpenXLS;
 
 import java.util.Locale;
 
+import com.valkyrlabs.formats.XLS.Formula;
 import com.valkyrlabs.formats.XLS.formulas.FunctionConstants;
 
 /** <b>Formula function is not supported for calculation.</b>

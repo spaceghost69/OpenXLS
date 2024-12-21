@@ -22,8 +22,8 @@
  */
 package com.valkyrlabs.formats.OOXML;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
-import com.valkyrlabs.formats.XLS.CellNotFoundException;
 import com.valkyrlabs.formats.XLS.OOXMLReader;
 import com.valkyrlabs.formats.XLS.OOXMLWriter;
 import com.valkyrlabs.toolkit.StringTool;

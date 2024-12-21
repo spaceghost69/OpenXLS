@@ -29,7 +29,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
+import com.valkyrlabs.OpenXLS.CellTypeMismatchException;
 import com.valkyrlabs.OpenXLS.ExcelTools;
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.formats.XLS.formulas.CalculationException;
 import com.valkyrlabs.formats.XLS.formulas.CircularReferenceException;

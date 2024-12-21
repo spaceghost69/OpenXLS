@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.Stack;
 import java.util.Vector;
 
+import com.valkyrlabs.OpenXLS.FormulaNotFoundException;
 import com.valkyrlabs.formats.XLS.formulas.FunctionConstants;
 import com.valkyrlabs.formats.XLS.formulas.Ptg;
 import com.valkyrlabs.formats.XLS.formulas.PtgAdd;
